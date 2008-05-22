@@ -16,7 +16,7 @@ class JsMaskTest < Test::Unit::TestCase
   end
   
   def test_calendar_date_select_tag_with_js_mask
-    assert_dom_equal %(<input name=\"schedule[finish]\" class=\"mask_date_br\" type=\"text\" id=\"schedule_finish\" value=\"21/05/2008\" /> <img src=\"/images/calendar_date_select/calendar.gif?1211390983\" onclick=\"new CalendarDateSelect( $(this).previous(), {year_range:10} );\" alt=\"Calendar\" style=\"border:0px; cursor:pointer;\" /><script type=\"text/javascript\">\n//<![CDATA[\n\n        Event.addBehavior.reassignAfterAjax = true;\n        Event.addBehavior({\n            'input#schedule_finish' : JSMask.Run\n        });\n      \n//]]>\n</script>),
+    assert_match %(<input class=\"mask_date_br\" id=\"schedule_finish\" name=\"schedule[finish]\" type=\"text\" value=\"21/05/2008\" />),
       calendar_date_select_tag_with_js_mask('schedule[finish]', '21/05/2008', {:id => 'schedule_finish', :class => 'mask_date_br'})
   end
 end
