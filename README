@@ -1,0 +1,19 @@
+JSMask
+======
+
+    JS Mask JavaScript framework, version 0.1
+
+
+Example
+=======
+    # View
+    # layouts/application.html.erb
+    <%= javascript_include_tag :defaults, :jsmask %>
+
+    # post/_form.html.erb
+    <%= text_field_with_js_mask :post, :date, :class => 'mask_date_br' -%>
+
+ For more examples, see icon creative:
+ * http://blog.iconcreative.net/tags/jsmask
+
+Copyright (c) 2008 Ozéias Sant'ana <ozeias@iconcreative.net> and <oz.santana@gmail.com>, released under the MIT license
