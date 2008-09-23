@@ -11,7 +11,7 @@ class JsMaskTest < Test::Unit::TestCase
   include ActionView::Helpers::FormTagHelper
   
   def test_text_field_with_js_mask
-    assert_dom_equal %(<input name=\"schedule[finish]\" size=\"30\" class=\"mask_date_br\" type=\"text\" id=\"schedule_finish\" /><script type=\"text/javascript\">\n//<![CDATA[\n\n        Event.addBehavior.reassignAfterAjax = true;\n        Event.addBehavior({\n            'input#schedule_finish' : JSMask.Run\n        });\n      \n//]]>\n</script>),
+    assert_dom_equal %(<input name=\"schedule[finish]\" size=\"30\" class=\"mask_date_br\" type=\"text\" id=\"schedule_finish\" /><script type=\"text/javascript\">\n//<![CDATA[\n\n        Event.addBehavior.reassignAfterAjax = true;\n        Event.addBehavior({'input#schedule_finish' : JSMask.Run});\n      \n//]]>\n</script>),
       text_field_with_js_mask(:schedule, :finish, :class => 'mask_date_br')
   end
   

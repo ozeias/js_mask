@@ -63,9 +63,7 @@ module JsMaskHelper
   def js_mask_javascript(id)
     javascript_tag("
         Event.addBehavior.reassignAfterAjax = true;
-        Event.addBehavior({
-            'input##{id}' : JSMask.Run
-        });
+        Event.addBehavior({'input##{id}' : JSMask.Run});
       ");
   end
 end
