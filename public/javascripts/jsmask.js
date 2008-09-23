@@ -1,8 +1,8 @@
-/*  JS Mask JavaScript framework, version 0.1
- *  (c) 2008 Ozéias Sant'ana <ozeias at iconcreative dot net> <oz.santana at gmail dot com>
+/*  JS Mask JavaScript framework, version 0.1.1
+ *  (c) 2008 Ozéias Sant'ana <ozeias at railsbox dot org> <oz.santana at gmail dot com>
  *
  *  JS Mask is freely distributable under the terms of an MIT-style license.
- *  For details, see the JS Mask web site: http://blog.iconcreative.net/
+ *  For details, see the JS Mask web site: http://railsbox.org/
  *
  *  Based on: Xaprb.InputMask by Baron Schwartz <baron at xaprb dot com>
  *  Required: Prototype JavaScript framework, version 1.6.0.2
